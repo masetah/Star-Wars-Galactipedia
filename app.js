@@ -36,7 +36,7 @@ $(()=>{
             }
         );
     }
-    
+
     function getCharInfo(data){
         let name
         name = data.name
@@ -45,11 +45,10 @@ $(()=>{
         $li.text(name).appendTo($('#characterList'))
     }
     
+    //Episode 1 Button
     $('.Episode1').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode1[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode1[0].release_date}/ Directed by: ${Episode1[0].director}`)
@@ -61,12 +60,10 @@ $(()=>{
                 urlSearch(Episode1[0].characters[i])      
         }   
     })})
-    
+    //Episode 2 Button
     $('.Episode2').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode2[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode2[0].release_date}/ Directed by: ${Episode2[0].director}`)
@@ -78,11 +75,10 @@ $(()=>{
                 urlSearch(Episode2[0].characters[i])      
         }   
     })})
+    //Episode 3 Button
     $('.Episode3').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode3[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode3[0].release_date}/ Directed by: ${Episode3[0].director}`)
@@ -94,11 +90,10 @@ $(()=>{
                 urlSearch(Episode3[0].characters[i])      
         }   
     })})
+    //Episode 4 Button
     $('.Episode4').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode4[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode4[0].release_date}/ Directed by: ${Episode4[0].director}`)
@@ -110,11 +105,10 @@ $(()=>{
                 urlSearch(Episode4[0].characters[i])      
         }   
     })})
+    //Episode 5 Button
     $('.Episode5').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode5[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode5[0].release_date}/ Directed by: ${Episode5[0].director}`)
@@ -126,11 +120,10 @@ $(()=>{
                 urlSearch(Episode5[0].characters[i])      
         }   
     })})
+    //Episode 6 Button
     $('.Episode6').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode6[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode6[0].release_date}/ Directed by: ${Episode6[0].director}`)
@@ -142,11 +135,10 @@ $(()=>{
                 urlSearch(Episode6[0].characters[i])      
         }   
     })})
+    //Episode 7 Button
     $('.Episode7').on("click", function(e){
         $('#characterList').empty()
-        console.log($('#characterList').children().length)
         e.preventDefault();
-        console.log($('#characterList').children().length)
         $('.infoScreen').empty()
         $('.infoScreen').append(`<h1>${Episode7[0].title}`)
         $('.infoScreen').append(`<p>Released: ${Episode7[0].release_date}/ Directed by: ${Episode7[0].director}`)
