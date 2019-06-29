@@ -1,0 +1,20 @@
+@font-face {
+    font-family: sWFont;
+    src: url("Starjedi.ttf");
+}
+@font-face {
+    font-family: sWFont2;
+    src: url("Starjhol.ttf");
+}
+h1 {
+    font-family: sWFont2; 
+}
+h2 {
+    font-family: sWFont; 
+}
+
+* {
+background:rgba(0, 0, 0, 1);
+color: #ffe400;
+text-align: center;
+}
