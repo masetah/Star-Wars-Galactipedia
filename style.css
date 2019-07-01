@@ -18,3 +18,9 @@ background:rgba(0, 0, 0, 1);
 color: #ffe400;
 text-align: center;
 }
+.mainScreen{
+    margin:10px;
+}
+#characterList{
+    margin:25px;
+}

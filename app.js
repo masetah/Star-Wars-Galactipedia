@@ -16,6 +16,7 @@ $(()=>{
             console.log('bad request');
         }
     );
+    //Global Variables
     const Episode1=[];
     const Episode2=[];
     const Episode3=[];
@@ -23,13 +24,16 @@ $(()=>{
     const Episode5=[];
     const Episode6=[];
     const Episode7=[];
-    
-    function urlSearch(url){
+    let charArray=[];
+
+     function urlSearch(url){
         $.ajax({
             url: url
         }).then(
             (data)=>{
                 getCharInfo(data)
+                charArray.push(data)
+                //console.log(charArray)
             },
             ()=>{
                 console.log('bad request');
@@ -40,7 +44,7 @@ $(()=>{
     function getCharInfo(data){
         let name
         name = data.name
-        console.log(data)
+        //console.log(data)
         let $li = $('<button>')
         $li.text(name).appendTo($('#characterList'))
     }
@@ -54,12 +58,15 @@ $(()=>{
         $('.infoScreen').append(`<p>Released: ${Episode1[0].release_date}/ Directed by: ${Episode1[0].director}`)
         $('.infoScreen').append(`<button>Characters`).attr("id","characterButton")
         $('.mainScreen').attr('src',"https://giphy.com/embed/3owzVXoDN8iP0w3T68")
+        episodeClicked="Episode1"
+        console.log(charArray)
         $('#characterButton').on("click", function(e){
             $('#characterList').empty()
             for (i = 0; i < Episode1[0].characters.length; i++){
-                urlSearch(Episode1[0].characters[i])      
-        }   
-    })})
+                urlSearch(Episode1[0].characters[i])
+            }})
+    })
+
     //Episode 2 Button
     $('.Episode2').on("click", function(e){
         $('#characterList').empty()
@@ -75,6 +82,7 @@ $(()=>{
                 urlSearch(Episode2[0].characters[i])      
         }   
     })})
+
     //Episode 3 Button
     $('.Episode3').on("click", function(e){
         $('#characterList').empty()
@@ -90,6 +98,7 @@ $(()=>{
                 urlSearch(Episode3[0].characters[i])      
         }   
     })})
+
     //Episode 4 Button
     $('.Episode4').on("click", function(e){
         $('#characterList').empty()
@@ -105,6 +114,7 @@ $(()=>{
                 urlSearch(Episode4[0].characters[i])      
         }   
     })})
+
     //Episode 5 Button
     $('.Episode5').on("click", function(e){
         $('#characterList').empty()
@@ -120,6 +130,7 @@ $(()=>{
                 urlSearch(Episode5[0].characters[i])      
         }   
     })})
+
     //Episode 6 Button
     $('.Episode6').on("click", function(e){
         $('#characterList').empty()
@@ -135,6 +146,7 @@ $(()=>{
                 urlSearch(Episode6[0].characters[i])      
         }   
     })})
+
     //Episode 7 Button
     $('.Episode7').on("click", function(e){
         $('#characterList').empty()
