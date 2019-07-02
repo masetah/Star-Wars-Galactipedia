@@ -1,7 +1,6 @@
 body{
     background-color: black;
     text-align: center;
-    /* display: inline-block; */
 }
 @font-face {
     font-family: sWFont;
@@ -28,6 +27,6 @@ color: #ffe400;
 #characterList{
     margin:25px;
 }
-.input-group-append{
+.buttonDiv{
     text-align: center;
 }
