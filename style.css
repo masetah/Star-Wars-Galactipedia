@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    text-align: center;
+    /* display: inline-block; */
+}
 @font-face {
     font-family: sWFont;
     src: url("Starjedi.ttf");
@@ -16,11 +21,13 @@ h2 {
 * {
 background:rgba(0, 0, 0, 1);
 color: #ffe400;
-text-align: center;
 }
 .mainScreen{
     margin:10px;
 }
 #characterList{
     margin:25px;
+}
+.input-group-append{
+    text-align: center;
 }
